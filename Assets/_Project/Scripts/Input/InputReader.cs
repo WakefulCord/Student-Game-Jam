@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using static PlayerInputActions;
 
-namespace Student-Game-Jam
+namespace StudentGameJam
 {
-
+    [CreateAssetMenu(fileName = "Input Reader", menuName = "Input/Input Reader")]
     public class InputReader : ScriptableObject, PlayerInputActions.IPlayerActions
     {
     public event UnityAction<Vector2> Move = delegate { };
@@ -25,6 +27,11 @@ namespace Student-Game-Jam
         inputActions.Enable();
     }
 
+    public void EnablePlayerActions()
+        {
+            inputActions.Player.Enable();
+        }
+
     public void OnMove(InputAction.CallbackContext context)
         {
         Move.Invoke(context.ReadValue<Vector2>());
@@ -44,7 +51,15 @@ namespace Student-Game-Jam
 
     public void OnMouseControlCamera(InputAction.CallbackContext context)
         {
-            //noop
+            switch (context.phase)
+            {
+                case InputActionPhase.Performed:
+                    EnableMouseControlCamera.Invoke();
+                    break;
+                case InputActionPhase.Canceled:
+                    DisableMouseControlCamera.Invoke();
+                    break;
+            }
         }
 
     public void OnRun(InputAction.CallbackContext context)
