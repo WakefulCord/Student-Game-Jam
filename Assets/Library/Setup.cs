@@ -1,9 +1,9 @@
-using System.IO;
+/*using System.IO;
 using UnityEngine;
 using UnityEditor;
 using static System.IO.Directory;
 using static System.IO.Path;
-using static UnityEditor.AssetDatabase;
+//using static UnityEditor.AssetDatabase;
 
 public static class Setup
 {
@@ -11,7 +11,7 @@ public static class Setup
     public static void CreateDefaultFolders()
     {
         Folders.CreateDefault("_Project", "Animation", "Art", "Materials", "Prefabs", "ScriptableObjects", "Scripts", "Settings");
-        Refresh();
+        //Refresh();
     }
 
     static class Folders
@@ -29,4 +29,4 @@ public static class Setup
             }
         }
     }
-}
+}*/

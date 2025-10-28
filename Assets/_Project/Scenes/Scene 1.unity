@@ -2239,7 +2239,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15212339, y: 0, z: 0, w: 0.98836154}
-  m_LocalPosition: {x: 72.69247, y: 31.407108, z: -161.12051}
+  m_LocalPosition: {x: 53.692467, y: -6.5928907, z: -136.12051}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10359,7 +10359,7 @@ Transform:
   m_GameObject: {fileID: 1590822483}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15212339, y: 0, z: 0, w: 0.98836154}
-  m_LocalPosition: {x: 72.69247, y: 31.407108, z: -161.12051}
+  m_LocalPosition: {x: 53.692467, y: -6.5928907, z: -136.12051}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13539,7 +13539,7 @@ GameObject:
   - component: {fileID: 2077185827}
   - component: {fileID: 2077185826}
   m_Layer: 3
-  m_Name: Transition point (1)
+  m_Name: End Transition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14504,15 +14504,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2037177710213638197, guid: 7d639e3eeab65de469d2b86fbd3b8c26, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 114.59558
+      value: 95.59558
       objectReference: {fileID: 0}
     - target: {fileID: 2037177710213638197, guid: 7d639e3eeab65de469d2b86fbd3b8c26, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 49.69104
+      value: 11.69104
       objectReference: {fileID: 0}
     - target: {fileID: 2037177710213638197, guid: 7d639e3eeab65de469d2b86fbd3b8c26, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -124.18172
+      value: -99.18172
       objectReference: {fileID: 0}
     - target: {fileID: 2037177710213638197, guid: 7d639e3eeab65de469d2b86fbd3b8c26, type: 3}
       propertyPath: m_LocalRotation.w
