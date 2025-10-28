@@ -32,6 +32,11 @@ public class SceneController : MonoBehaviour
         }
     }
 
+    public void LastScene()
+    {
+        StartCoroutine(LoadLast());
+    }
+
     IEnumerator LoadLevel2()
     {
         transitionAnim.SetTrigger("End");
@@ -48,5 +53,14 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadSceneAsync("Scene 1");
         transitionAnim.SetTrigger("Start");
         Player.transform.position = new Vector3(0, 1, 0);
+    }
+
+    IEnumerator LoadLast()
+    {
+        transitionAnim.SetTrigger("End");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadSceneAsync("Scene 3");
+        transitionAnim.SetTrigger("Start");
+        
     }
 }
